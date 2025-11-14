@@ -1,0 +1,73 @@
+.restaurants-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.restaurants-dropdown-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.restaurants-dropdown-menu {
+    margin-left: 40px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.05); /* soft shadow */
+    border: none;
+    background-color: transparent;
+}
+
+.restaurants-dropdown-menu:focus {
+    border: none;
+    outline: none;
+}
+
+.restaurants-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.restaurants-card {
+    background-color: lightgreen;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.restaurant-background-image {
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid black;
+}
+
+.restaurants-info-container {
+    margin-left: 3px;
+}
+
+.restaurants-name {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.restaurants-rating {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.restaurants-address {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.restaurants-description {
+    margin-bottom: 5px;
+}
+
+.restaurants-phone-number {
+    display: flex;
+    flex-direction: row;
+}

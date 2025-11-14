@@ -54,7 +54,7 @@ main {
 }
 
 [data-type="health"] .issue-icon i {
-    background: green;
+    background: #8e24aa;
 }
 
 [data-type="traffic"] .issue-icon i {

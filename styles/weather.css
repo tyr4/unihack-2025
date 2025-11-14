@@ -1,0 +1,73 @@
+.main-weather-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 1fr;
+    border-radius: 5px;
+    width: 85%;
+    padding: 1vw;
+    margin: 0.5vw;
+    background: linear-gradient(135deg, #ffffff, #f3f3f7);
+    color: black;
+}
+
+.main-weather-element{
+    padding: 2vw;
+}
+#time{
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 1.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: lightgray;
+}
+#temperature-container{
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 2.5rem;
+    border-bottom-left-radius: 5px;
+}
+#more-info-container{
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 2.5rem;
+    border-bottom-right-radius: 5px;
+}
+
+#temperature, #weather{
+    margin-top:0;
+}
+#feelsLike, #dayNightTemp{
+    margin-bottom:0;
+}
+
+.advanced-weather-grid{
+    display: grid;
+    width: 85%;
+    padding: 1vw;
+    margin: 0.5vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0.25vw;
+    grid-row-gap: 0.25vw;
+    background-color: white;
+    color: black;
+    height: fit-content;
+}
+#humidity{ grid-area: 1 / 1 / 2 / 2;}
+#highLow{ grid-area: 1 / 2 / 2 / 3;}
+#wind{ grid-area: 2 / 1 / 3 / 2;}
+#dewPoint{ grid-area: 2 / 2 / 3 / 3;}
+#visibility{ grid-area: 3 / 1 / 4 / 2;}
+#UVIndex{ grid-area: 3 / 2 / 4 / 3;}
+#cloudCover{ grid-area: 4 / 1 / 5 / 2;}
+#rainAmount{ grid-area: 4 / 2 / 5 / 3;}
+.value {
+    text-align: right;
+}
+.advanced-weather-element {
+    display: flex;
+    justify-content: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.advanced-weather-element > span {
+    width: 50%;
+}

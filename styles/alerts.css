@@ -1,0 +1,111 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    min-height: 500px;
+    font-family: Arial,sans-serif;
+}
+
+.issue-card {
+    width: 100%;
+    background: white;
+    margin-bottom: 20px ;
+    display: flex;
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-left: 5px solid transparent;
+}
+
+.issue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+
+/* ===== ICON ===== */
+
+.issue-icon i {
+    font-size: 28px;
+    padding: 16px;
+    border-radius: 12px;
+    color: white;
+}
+
+
+/* Color icons by category */
+[data-type="emergency"] .issue-icon i {
+    background: #d13636;
+}
+
+[data-type="infrastructure"] .issue-icon i {
+    background: #757575;
+}
+
+[data-type="weather"] .issue-icon i {
+    background: #1e88e5;
+}
+
+[data-type="public-safety"] .issue-icon i {
+    background: #ef6c00;
+}
+
+[data-type="health"] .issue-icon i {
+    background: #8e24aa;
+}
+
+[data-type="traffic"] .issue-icon i {
+    background: #fdd835;
+}
+
+
+/* ===== CONTENT TEXT ===== */
+
+.issue-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.issue-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.issue-desc {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+/* ===== TAG & ZONE ===== */
+
+.issue-tag {
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 6px;
+    width: fit-content;
+    color: white;
+}
+
+/* Tag colors by category */
+.issue-tag.emergency { background: #d13636; }
+.issue-tag.infrastructure { background: #757575; }
+.issue-tag.weather { background: #1e88e5; }
+/*.issue-tag["public-safety"] { background: #ef6c00; }*/
+.issue-tag.health { background: #8e24aa; }
+.issue-tag.weather { background: #1e88e5; }
+.issue-tag.traffic { background: #fdd835; color: black; }
+
+.issue-zone {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #6d19c2;
+}

@@ -23,8 +23,6 @@
     background: linear-gradient(135deg, #ffffff, #f3f3f7);
     transform: translateY(-5px);
 }
-
-}
 .notif-badge{
     position: absolute;
     top: 5px;

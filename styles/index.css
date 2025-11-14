@@ -15,13 +15,13 @@ body {
     flex: 1; /* **ACEASTĂ ESTE CHEIA** - Permite elementului să crească și să umple spațiul vertical rămas */
     /* Adăugați spațiu de deasupra pentru a evita suprapunerea cu header-ul fix */
     margin-top: 100px; /* Trebuie să fie egală cu înălțimea header-ului (100px) */
-    padding: 20px;
+
 
 }
 footer {
     background: linear-gradient(135deg, #5a0fa8, #6d19c2);
     color: white;
-    padding: 1rem 2rem 1rem;
+    padding: 1rem 2rem 1em;
     text-align: left;
 
     transition: box-shadow 0.3s ease;
@@ -161,9 +161,10 @@ header {
     transition: transform 0.25s ease;
 
 }
-.widget:hover{
+.widget:hover {
     background: linear-gradient(135deg, #ffffff, #f3f3f7);
-    transform: translateY(-5px) ;
+    transform: translateY(-5px);
+}
 
 .login-button {
     background: rgba(255, 255, 255, 0);
@@ -179,4 +180,95 @@ header {
 .login-button-image {
     height: 40px;
     width: 40px;
+}
+/* CONTAINER CTA */
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+/* INPUT */
+.call-to-action input {
+    width: 260px;
+    padding: 10px 4px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    text-align: center;
+}
+
+.call-to-action input:focus {
+    border-bottom-color: #6d19c2;
+}
+
+/* BUTON 3D MOV */
+.call-to-action button {
+    background: linear-gradient(180deg, #7b1ed7, #5e0fa7);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #4b0c86;   /* baza 3D */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* HOVER — se ridică puțin */
+.call-to-action button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 0 #4b0c86;
+}
+
+/* ACTIVE — apăsare realistă 3D */
+.call-to-action button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #4b0c86;
+}
+/* CONTAINER SLIDESHOW — responsive, centrat */
+.slides {
+    width: 100%;
+      /* nu depășește lățimea site-ului */
+    height: 420px;           /* înălțime ideală pentru slideshow */
+    margin: 0 auto;          /* îl centrează */
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 0 15px;
+}
+
+/* FIECARE SLIDE — stacked peste alte */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: opacity 1.2s ease-out;
+}
+
+/* SLIDE VIZIBIL */
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* IMAGINEA DIN SLIDE — fără pixelare, fără distorsiuni */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* umple frumos containerul fără să fie pixelată */
+    object-position: center;
 }

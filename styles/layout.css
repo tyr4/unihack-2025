@@ -11,7 +11,6 @@ root {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    color: white;
     font-family: Arial, serif;
 }
 
@@ -61,6 +60,7 @@ footer {
     align-items: center;
     height: fit-content;
     background: linear-gradient(135deg, #5a0fa8, #6d19c2);
+    color: white;
 }
 
 footer ul {

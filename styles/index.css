@@ -1,7 +1,6 @@
 /*widget container*/
 .widgets{
     display: grid;
-
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
     justify-items: left;   /* centrează elementele pe orizontală */

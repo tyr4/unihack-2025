@@ -3,20 +3,6 @@
     flex-direction: row;
 }
 
-.restaurants-welcome-text {
-    height: 60px;
-    width: 400px;
-    /*background: linear-gradient(135deg, #844fe4, #8e4ad7); !* soft purple gradient *!*/
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.05); /* soft shadow */
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 30px;
-    font-family: Arial, serif;
-    padding-left: 20px;
-    color: orangered;
-}
-
 .restaurants-dropdown-container {
     width: 50%;
     display: flex;
@@ -33,4 +19,55 @@
 
 .restaurants-dropdown-menu:focus {
     border: none;
+    outline: none;
+}
+
+.restaurants-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.restaurants-card {
+    background-color: lightgreen;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.restaurant-background-image {
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid black;
+}
+
+.restaurants-info-container {
+    margin-left: 3px;
+}
+
+.restaurants-name {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.restaurants-rating {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.restaurants-address {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.restaurants-description {
+    margin-bottom: 5px;
+}
+
+.restaurants-phone-number {
+    display: flex;
+    flex-direction: row;
 }

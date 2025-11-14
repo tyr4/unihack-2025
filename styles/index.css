@@ -1,3 +1,70 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main-page {
+    flex: 1;
+}
+
+footer {
+    background: linear-gradient(135deg, #5a0fa8, #6d19c2);
+    color: white;
+    padding: 2.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 0.95rem;
+}
+
+.footer-content {
+    display: flex;
+    gap: 4rem;
+}
+
+/* coloana din stanga */
+.footer-info p {
+    margin: 3px 0;
+}
+
+/* coloana din dreapta */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.footer-links a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 3px 0;
+}
+
+.footer-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background: #d4b3ff;
+    transition: width 0.3s;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+.footer-links a:active {
+    color: #e3c6ff;
 .header {
     width: 100%;
     height: 100px;

@@ -24,7 +24,6 @@
     transform: translateY(-5px);
 }
 
-}
 .notif-badge{
     position: absolute;
     top: 5px;
@@ -32,7 +31,7 @@
     border-radius:50px;
     width: 30px;
     height: 30px;
-   display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;

@@ -141,3 +141,19 @@ header {
     font-size: 0.8rem;
     opacity: 0.8;
 }
+
+.login-button {
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    height: 45px;
+}
+
+.login-button:hover {
+    background: rgba(255, 255, 255, 0.15);
+
+}
+
+.login-button-image {
+    height: 40px;
+    width: 40px;
+}

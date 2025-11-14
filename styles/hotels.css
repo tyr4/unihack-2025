@@ -15,20 +15,20 @@ select:focus {
     outline: none;
 }
 
-.restaurants-header {
+.hotels-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
 }
 
-.restaurants-dropdown-container {
+.hotels-dropdown-container {
     width: 50%;
     display: flex;
     justify-content: flex-start;
 }
 
-.restaurants-dropdown-menu {
+.hotels-dropdown-menu {
     margin-left: 40px;
     width: 200px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.05); /* soft shadow */
@@ -36,19 +36,19 @@ select:focus {
     background-color: transparent;
 }
 
-.restaurants-dropdown-menu:focus {
+.hotels-dropdown-menu:focus {
     border: none;
     outline: none;
 }
 
-.restaurants-grid {
+.hotels-grid {
     display: grid;
     gap: 15px;
     width: 100%;
     grid-template-columns: repeat(3,1fr);
 }
 
-.restaurants-card {
+.hotels-card {
     background: linear-gradient(135deg, #efeaea, #e3e3ef);
     height: 300px;
     font-size: 17px;
@@ -57,11 +57,11 @@ select:focus {
     border-radius: 6px;
 }
 
-.restaurants-card:hover {
+.hotels-card:hover {
     cursor: pointer;
 }
 
-.restaurant-background-image {
+.hotels-background-image {
     width: 100%;
     height: 100px;
     object-fit: cover;
@@ -69,11 +69,11 @@ select:focus {
     border-radius: 6px;
 }
 
-.restaurants-info-container {
+.hotels-info-container {
     margin-left: 10px;
 }
 
-.restaurants-name {
+.hotels-name {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -84,23 +84,23 @@ select:focus {
     margin-top: -20px;
 }
 
-.restaurants-rating {
+.hotels-rating {
     color: #e4a328;
 }
 
-.restaurants-address {
+.hotels-address {
     margin-bottom: 5px;
 }
 
-.restaurants-description {
+.hotels-description {
     margin-bottom: 5px;
 }
 
-.restaurants-icon {
+.hotels-icon {
     margin-bottom: 5px;
 }
 
-.restaurants-phone-number {
+.hotels-phone-number {
     display: flex;
     flex-direction: row;
     margin-bottom: 5px;

@@ -31,11 +31,8 @@ footer {
 /* Glow interior subtil la hover */
 footer:hover {
     box-shadow: 0 0 30px rgba(255,255,255,0.12) inset;
-    padding: 2.5rem 1rem;
-    display: flex;
-    justify-content: center;
-    font-size: 0.95rem;
-    margin-top: auto;
+
+
 }
 
 .footer-content {
@@ -140,4 +137,35 @@ header {
     margin-top: 2rem;
     font-size: 0.8rem;
     opacity: 0.8;
+}
+
+/*widget container*/
+.widgets{
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    justify-items: left;   /* centrează elementele pe orizontală */
+    align-items: center;       /* le aliniază sus */
+    width: 100%;
+    margin: 0 auto;
+    max-width:1200px;
+    padding-top: 100px;
+
+
+
+
+}
+.widget{
+background: linear-gradient(135deg, #ffffff, #f3f3f7);
+    width: 100%;
+    height: 160px;
+    margin-top: -8px;
+    transition: transform 0.25s ease;
+
+}
+.widget:hover{
+    background: linear-gradient(135deg, #ffffff, #f3f3f7);
+    transform: translateY(-5px) ;
+
 }

@@ -1,0 +1,29 @@
+
+#myMap {
+    display: flex;
+    width: 95%;
+    height: 350px;
+}
+.bus-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: fit-content;
+    margin-top: 20px;
+    background-color: #bfbfbf;
+}
+.bus-data ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    width: 30%;
+    background-color: #e6e6e6;
+}
+.bus-data ul li {
+    list-style-type: none;
+    margin: 5px 0;
+}

@@ -10,16 +10,10 @@ main {
     position: absolute;
     z-index: 10;
     background-image: url("../images/timisoara-login.jpg");
-
-
-
-
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-
-
 }
 /* CONTAINER ROW pentru cele 2 paneluri */
 /* --- RIGHT PANEL (Dreapta) --- */
@@ -30,10 +24,6 @@ body{
 .login-conatiner {
     display: flex; /* <-- CHEIA: Le așează pe orizontală */
     flex-direction: row; /* Implicit, dar explicit pentru claritate */
-
-
-
-
     /* Adăugați stilurile de container (dimensiune, umbră, etc.) */
     width: 750px;
     height: 450px;
@@ -52,7 +42,6 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
 
 .left-panel img {
@@ -63,6 +52,7 @@ body{
 
 /* --- RIGHT PANEL (Formular) --- */
 .right-panel {
+    position: relative;
     width: 60%;
     padding: 40px;
     display: flex;
@@ -97,6 +87,7 @@ body{
     box-sizing: border-box;
     transition: border-color 0.3s;
 }
+
 .login-form input[type="email"]:focus,
 .login-form input[type="password"]:focus {
     border-color: #6d19c2;
@@ -124,4 +115,36 @@ body{
 .login-btn:active {
     transform: translateY(4px) scale(0.97); /* se turtește */
     box-shadow: 0 2px 0 #4b0c86; /* umbra devine mică */
+}
+
+.forgot-password {
+    margin-top: 15px;
+    color: grey;
+}
+
+.forgot-password:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* CLOSE BUTTON */
+.close-button {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    border: none;
+    background: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease;
+}
+
+.close-button:hover {
+    transform: scale(1.1);
 }

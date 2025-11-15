@@ -41,7 +41,7 @@
 }
 
 /* CLOSE BUTTON */
-.cta-close {
+.close-button {
     position: absolute;
     right: 14px;
     top: 14px;
@@ -58,7 +58,7 @@
     transition: transform .2s ease;
 }
 
-.cta-close:hover {
+.close-button:hover {
     transform: scale(1.1);
 }
 

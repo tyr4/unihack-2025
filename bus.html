@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/bus.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/bus.css">
 
 </head>
 <body>
@@ -14,84 +14,87 @@
     <a href="index.html">
         <img src="images/tva_crop_noshadow.png" alt="">
     </a>
-  <i class="fa-solid fa-user fa-2x"></i>
+    <i class="fa-solid fa-user fa-2x"></i>
 </header>
 
 <main>
     <div id="myMap"></div>
-  <div class="bus-data">
-      <div class="route-header">
-          <div class="price-container">
-              <h2>Price: $4</h2>
-          </div>
-          <div class="legend-container">
-              <h2>Location</h2>
-              <h2>Time</h2>
-              <h2>Delay</h2>
-          </div>
-      </div>
-  <div class="route-table">
-      <div class="stops-info">
-          <ul>
-              <li>Stop 1</li>
-              <li>Stop 2</li>
-              <li>Stop 3</li>
-              <li>Stop 4</li>
-              <li>Stop 5</li>
-          </ul>
-      </div>
-      <div class="legend-info">
-          <div class="location-container">
-              <ul>
-                  <li>Stop 1</li>
-                  <li>Stop 2</li>
-                  <li>Stop 3</li>
-                  <li>Stop 4</li>
-                  <li>Stop 5</li>
-              </ul>
-          </div>
-          <div class="time-container">
-              <ul>
-                  <li>Stop 1</li>
-                  <li>Stop 2</li>
-                  <li>Stop 3</li>
-                  <li>Stop 4</li>
-                  <li>Stop 5</li>
-              </ul>
-          </div>
-          <div class="delay-container">
-              <ul>
-                  <li>Stop 1</li>
-                  <li>Stop 2</li>
-                  <li>Stop 3</li>
-                  <li>Stop 4</li>
-                  <li>Stop 5</li>
-              </ul>
-          </div>
-      </div>
-  </div>
-  </div>
+    <div class="bus-data">
+        <div class="route-header">
+            <div class="price-container">
+                <h2>Price: $4</h2>
+            </div>
+            <div class="legend-container">
+                <h2>Location</h2>
+                <h2>Time</h2>
+                <h2>Delay</h2>
+            </div>
+        </div>
+        <div class="route-table">
+            <div class="stops-info">
+                <ul>
+                    <li>Stop 1</li>
+                    <li>Stop 2</li>
+                    <li>Stop 3</li>
+                    <li>Stop 4</li>
+                    <li>Stop 5</li>
+                </ul>
+            </div>
+            <div class="legend-info">
+                <div class="location-container">
+                    <ul>
+                        <li>Stop 1</li>
+                        <li>Stop 2</li>
+                        <li>Stop 3</li>
+                        <li>Stop 4</li>
+                        <li>Stop 5</li>
+                    </ul>
+                </div>
+                <div class="time-container">
+                    <ul>
+                        <li>Stop 1</li>
+                        <li>Stop 2</li>
+                        <li>Stop 3</li>
+                        <li>Stop 4</li>
+                        <li>Stop 5</li>
+                    </ul>
+                </div>
+                <div class="delay-container">
+                    <ul>
+                        <li>Stop 1</li>
+                        <li>Stop 2</li>
+                        <li>Stop 3</li>
+                        <li>Stop 4</li>
+                        <li>Stop 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer>
-  <ul>
-    <li><a href="#">Restaurants</a></li>
-    <li><a href="#">Hotels</a></li>
-    <li><a href="#">Weather</a></li>
-    <li><a href="#">Bus Routes</a></li>
-    <li><a href="#">Alerts</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#">Restaurants</a></li>
-    <li><a href="#">Hotels</a></li>
-    <li><a href="#">Weather</a></li>
-    <li><a href="#">Bus Routes</a></li>
-    <li><a href="#">Alerts</a></li>
-  </ul>
-
-  <script src="https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.js"></script>
-  <script src="bus.js"></script>
+    <ul>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="hotels.html">Hotels</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li><a href="bus.html">Bus Routes</a></li>
+        <li><a href="alerts.html">Alerts</a></li>
+        <li><a href="alerts.html">City Issues</a></li>
+        <li><a href="https://www.primariatm.ro/">Stay connected with Timisoara</a></li>
+    </ul>
+    <div class="copyright-text">
+        &copy; Timisoara Viewer App 2025<br />
+    </div>
+    <ul>
+        <li>Credits:</li>
+        <li>tyr4 - git maintainer & frontend</li>
+        <li>AkanoSz2 - api's & backend</li>
+        <li>Cici20BAR - frontend</li>
+        <li>Marcu-Mihai-Vlad - frontend</li>
+    </ul>
 </footer>
+<script src="https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.js"></script>
+<script src="bus.js"></script>
 </body>
 </html>

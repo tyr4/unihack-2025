@@ -77,3 +77,8 @@ footer ul li a{
     text-decoration: none;
     color: var(--main-text-color);
 }
+
+.copyright-text {
+    padding-top: 220px;
+    color: #b7afaf;
+}

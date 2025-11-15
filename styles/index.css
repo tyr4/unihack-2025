@@ -150,22 +150,29 @@
     border-radius: 50px;
     cursor: pointer;
 
-    color: #ffffff;
-    background: linear-gradient(135deg, #03dac6, #00b8a9);
-    box-shadow: 0 8px 20px rgba(3, 218, 198, 0.45);
+    color: #333333; /* Am schimbat culoarea textului la negru/gri închis pentru contrast pe fundalul galben */
+    /* NOU: Gradient Auriu/Galben */
+    background: linear-gradient(135deg, #FFD700, #CC9900);
+    /* NOU: Umbră Galbenă/Auriu */
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.45);
 
     transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.4s;
 }
 
 /* Hover */
 .cta-btn:hover {
+    /* Mărire și ridicare vizuală */
     transform: translateY(-6px) scale(1.05);
-    background: linear-gradient(135deg, #00b8a9, #03dac6);
-    box-shadow: 0 15px 35px rgba(3, 218, 198, 0.6);
+    /* NOU: Inversarea gradientului la hover */
+    background: linear-gradient(135deg, #CC9900, #FFD700);
+    /* NOU: Umbră Galbenă/Auriu mai intensă la hover */
+    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.6);
 }
 
 /* Active */
 .cta-btn:active {
+    /* Apăsare vizuală */
     transform: translateY(-2px) scale(0.97);
-    box-shadow: 0 4px 12px rgba(3, 218, 198, 0.5);
+    /* NOU: Umbră restrânsă la active */
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.5);
 }

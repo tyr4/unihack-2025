@@ -105,3 +105,9 @@ select:focus {
     flex-direction: row;
     margin-bottom: 5px;
 }
+
+.hotels-render-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}

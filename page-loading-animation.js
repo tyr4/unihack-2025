@@ -1,12 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const loadingScreen = document.getElementById("loadingScreen");
+window.addEventListener('load', () => {
+    const loadingScreen = document.getElementById('loadingScreen');
     setTimeout(() => {
-        loadingScreen.classList.add("fade-out");
-
-
-        setTimeout(() => {
-            loadingScreen.style.display = "none";
-        }, 3000);
-
-    }, 2800);
+        loadingScreen.classList.add('hidden');
+        document.body.classList.add('page-loaded');
+    }, 2000);
 });

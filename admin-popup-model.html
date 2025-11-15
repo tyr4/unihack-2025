@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Panels</title>
+
+    <link rel="stylesheet" href="styles/popup-admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+
+<!--Restaurante-->
+<div class="admin-edit-overlay" id="editRestaurant">
+
+    <div class="admin-edit-modal">
+
+        <button class="edit-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h2>Edit Restaurant</h2>
+        <p>Modify restaurant information and save the changes.</p>
+
+        <form class="edit-form">
+
+            <input type="text" class="edit-input" placeholder="Restaurant name">
+            <textarea class="edit-textarea" placeholder="Short description"></textarea>
+
+            <input type="text" class="edit-input" placeholder="Address">
+            <input type="text" class="edit-input" placeholder="Phone number">
+
+            <select class="edit-select">
+                <option selected disabled>Food type</option>
+                <option>Italian</option>
+                <option>Romanian</option>
+                <option>Fast Food</option>
+                <option>Asian</option>
+                <option>International</option>
+            </select>
+
+            <input type="number" class="edit-input" placeholder="Rating (1-5)">
+
+            <button type="submit" class="edit-submit-btn">Save Changes</button>
+
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<div class="admin-edit-overlay" id="editAlert">
+
+    <div class="admin-edit-modal">
+
+        <button class="edit-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h2>Edit Alert</h2>
+        <p>Update city notification details.</p>
+
+        <form class="edit-form">
+
+            <input type="text" class="edit-input" placeholder="Alert title">
+
+            <select class="edit-select">
+                <option disabled selected>Severity</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+
+            <select class="edit-select">
+                <option disabled selected>Category</option>
+                <option>Weather</option>
+                <option>Transportation</option>
+                <option>Public Safety</option>
+                <option>City Maintenance</option>
+            </select>
+            <input type="text" class="edit-input" placeholder="Affected Areas (e.g. Central, Gara de Nord)">
+
+
+            <textarea class="edit-textarea" placeholder="Alert message"></textarea>
+
+            <input type="date" class="edit-input">
+
+            <button type="submit" class="edit-submit-btn">Save Changes</button>
+
+        </form>
+    </div>
+</div>
+
+
+
+<!-- ========================================================= -->
+<!-- ==================== EDIT BUS POPUP ===================== -->
+<!-- ========================================================= -->
+<div class="admin-edit-overlay" id="editBus">
+
+    <div class="admin-edit-modal">
+
+        <button class="edit-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h2>Edit Bus / Tram Route</h2>
+        <p>Modify transport route details.</p>
+
+        <form class="edit-form">
+
+            <input type="text" class="edit-input" placeholder="Route name (e.g. Tramvai 1)">
+            <input type="text" class="edit-input" placeholder="Main route description">
+
+            <input type="number" class="edit-input" placeholder="Number of stops">
+
+            <textarea class="edit-textarea" placeholder="Weekday schedule"></textarea>
+            <textarea class="edit-textarea" placeholder="Weekend schedule"></textarea>
+
+            <input type="text" class="edit-input" placeholder="Fare (e.g. 2.50 RON)">
+
+            <button type="submit" class="edit-submit-btn">Save Changes</button>
+
+        </form>
+    </div>
+
+</div>
+
+
+
+<!-- ========================================================= -->
+<!-- ==================== EDIT HOTEL POPUP ==================== -->
+<!-- ========================================================= -->
+<div class="admin-edit-overlay" id="editHotel">
+
+    <div class="admin-edit-modal">
+
+        <button class="edit-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h2>Edit Hotel</h2>
+        <p>Modify hotel information and amenities.</p>
+
+        <form class="edit-form">
+
+            <input type="text" class="edit-input" placeholder="Hotel name">
+            <textarea class="edit-textarea" placeholder="Short description"></textarea>
+
+            <input type="text" class="edit-input" placeholder="Address">
+            <input type="text" class="edit-input" placeholder="Phone number">
+
+            <input type="number" class="edit-input" placeholder="Stars (1-5)">
+
+            <input type="text" class="edit-input" placeholder="Price range (e.g. $$)">
+
+            <button type="submit" class="edit-submit-btn">Save Changes</button>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

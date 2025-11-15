@@ -1,0 +1,59 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/bus.css' %}">
+{% endblock %}
+
+{% block content %}
+    <main>
+    <div id="myMap"></div>
+  <div class="bus-data">
+      <div class="route-header">
+          <div class="price-container">
+              <h2>Price: 4</h2>
+          </div>
+          <div class="legend-container">
+              <h2>Location</h2>
+              <h2>Time</h2>
+          </div>
+      </div>
+  <div class="route-table">
+      <div class="stops-info">
+          <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+          </ul>
+      </div>
+      <div class="legend-info">
+          <div class="location-container">
+              <ul>
+                  <li>Stop 1</li>
+                  <li>Stop 2</li>
+                  <li>Stop 3</li>
+                  <li>Stop 4</li>
+                  <li>Stop 5</li>
+              </ul>
+          </div>
+          <div class="time-container">
+              <ul>
+                  <li>Stop 1</li>
+                  <li>Stop 2</li>
+                  <li>Stop 3</li>
+                  <li>Stop 4</li>
+                  <li>Stop 5</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  </div>
+</main>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.js"></script>
+    <script src="{% static 'js/bus.js' %}"></script>
+{% endblock %}

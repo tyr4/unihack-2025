@@ -1,2 +1,5 @@
 .idea
 package.json
+.venv
+static/js/package.json
+staticfiles/js/package.json

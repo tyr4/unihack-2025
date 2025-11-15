@@ -1,0 +1,216 @@
+/*widget container*/
+.widgets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 110px;
+    justify-items: left;   /* centrează elementele pe orizontală */
+    align-items: center;       /* le aliniază sus */
+    width: 100%;
+    margin: 0 auto;
+    max-width:1200px;
+    padding-top: 100px;
+}
+
+.widget{
+    position: relative;
+    background: #faf5ff; /* mov foarte deschis */
+    border-radius: 22px;
+    padding: 32px;
+    width: 100%;
+    height: 260px;
+
+
+    box-shadow: 0 10px 25px rgba(109, 25, 194, 0.12);
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    transition: transform .25s ease, box-shadow .25s ease;
+
+}
+.widget:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(109, 25, 194, 0.18);
+
+}
+.widget:hover .widget-icon i {
+    animation: icon-bounce 0.5s ease;
+}
+
+@keyframes icon-bounce {
+    0%   { transform: translateY(0); }
+    35%  { transform: translateY(-6px); }
+    60%  { transform: translateY(2px); }
+    100% { transform: translateY(0); }
+}
+
+.widget i{
+    font-size: 28px;
+    color: #7b1ed7;
+}
+.widget p{
+    margin: 0;
+    font-size: 0.95rem;
+    color: #9333ea;
+    line-height: 1.45;
+    text-align: start;
+}
+.widget h3{
+    font-size: 32px;
+    color: #7b1ed7;
+}
+
+.notif-badge{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+
+    background: #5a0fa8;
+    color: white;
+    font-size: 13px;
+    padding: 5px 9px;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(108, 39, 245, 0.4);
+}
+.login-button {
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    height: 45px;
+}
+
+.login-button:hover {
+    background: rgba(255, 255, 255, 0.15);
+
+}
+
+.login-button-image {
+    height: 40px;
+    width: 40px;
+}
+/* CONTAINER CTA */
+
+/* CONTAINER SLIDESHOW — responsive, centrat */
+.slides {
+    width: 100%;
+    /* nu depășește lățimea site-ului */
+    height: 420px;           /* înălțime ideală pentru slideshow */
+    margin: 0 auto;          /* îl centrează */
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 0 15px;
+}
+
+/* FIECARE SLIDE — stacked peste alte */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: opacity 1.2s ease-out;
+}
+
+/* SLIDE VIZIBIL */
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* IMAGINEA DIN SLIDE — fără pixelare, fără distorsiuni */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* umple frumos containerul fără să fie pixelată */
+    object-position: center;
+    background-repeat: no-repeat;
+}
+/* === CALL TO ACTION SECTION === */
+.call-to-action {
+    text-align: center;
+    padding: 60px 40px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #4b0c86, #6d19c2, #b083ff);
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease infinite;
+
+    color: white;
+    max-width: 650px;
+    margin: 50px auto;
+    box-shadow: 0 15px 40px rgba(109, 25, 194, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+/* animated background */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* fade + slide for text */
+.call-to-action h2,
+.call-to-action p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.call-to-action p {
+    animation-delay: 0.2s;
+    color: whitesmoke;
+}
+
+/* text animation */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Click: 3D press */
+.cta-btn {
+    margin-top: 25px;
+    padding: 14px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    color: #333333; /* Am schimbat culoarea textului la negru/gri închis pentru contrast pe fundalul galben */
+    /* NOU: Gradient Auriu/Galben */
+    background: linear-gradient(135deg, #FFD700, #CC9900);
+    /* NOU: Umbră Galbenă/Auriu */
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.45);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.4s;
+}
+
+/* Hover */
+.cta-btn:hover {
+    /* Mărire și ridicare vizuală */
+    transform: translateY(-6px) scale(1.05);
+    /* NOU: Inversarea gradientului la hover */
+    background: linear-gradient(135deg, #CC9900, #FFD700);
+    /* NOU: Umbră Galbenă/Auriu mai intensă la hover */
+    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.6);
+}
+
+/* Active */
+.cta-btn:active {
+    /* Apăsare vizuală */
+    transform: translateY(-2px) scale(0.97);
+    /* NOU: Umbră restrânsă la active */
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.5);
+}

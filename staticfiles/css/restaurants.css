@@ -1,0 +1,107 @@
+select {
+    width: 100%;
+    height: 55px;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #cccccc;
+    font-size: 15px;
+    background: white;
+    transition: border-color 0.25s ease;
+}
+
+select:focus {
+    border-color: #6d19c2;
+    box-shadow: 0 0 10px rgba(109, 25, 194, 0.35);
+    outline: none;
+}
+
+.restaurants-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.restaurants-dropdown-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.restaurants-dropdown-menu {
+    margin-left: 40px;
+    width: 200px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.05); /* soft shadow */
+    border: none;
+    background-color: transparent;
+}
+
+.restaurants-dropdown-menu:focus {
+    border: none;
+    outline: none;
+}
+
+.restaurants-grid {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.restaurants-card {
+    background: linear-gradient(135deg, #efeaea, #e3e3ef);
+    height: 300px;
+    font-size: 17px;
+    box-shadow: 0 6px 0 #4b0c86;
+    /*border: 2px solid black;*/
+    border-radius: 6px;
+}
+
+.restaurants-card:hover {
+    cursor: pointer;
+}
+
+.restaurant-background-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-bottom: 2px solid black;
+    border-radius: 6px;
+}
+
+.restaurants-info-container {
+    margin-left: 10px;
+}
+
+.restaurants-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #7b1dda;
+    margin-top: -20px;
+}
+
+.restaurants-rating {
+    color: #e4a328;
+}
+
+.restaurants-address {
+    margin-bottom: 5px;
+}
+
+.restaurants-description {
+    margin-bottom: 5px;
+}
+
+.restaurants-icon {
+    margin-bottom: 5px;
+}
+
+.restaurants-phone-number {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}

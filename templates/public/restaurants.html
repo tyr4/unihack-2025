@@ -1,0 +1,254 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/restaurants.css' %}">
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="restaurants-header">
+            <h1>Restaurants section</h1>
+
+            <div class="restaurants-dropdown-container">
+                <select class="restaurants-dropdown-menu">
+                    <option value="all">All</option>
+                    <option value="fine">Fine Dining</option>
+                    <option value="casual">Casual Dining</option>
+                    <option value="fastfood">Fast Food</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="restaurants-grid">
+            <div class="restaurants-card">
+                <div class="restaurant-background">
+                    <img class="restaurant-background-image" src="images/restaurant1.jpg" alt="">
+                </div>
+                <div class="restaurants-info-container">
+                    <div class="restaurants-name">
+                        <p class="restaurant-name-text">Restaurant Timisoara</p>
+                        <div class="restaurants-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="restaurants-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="restaurants-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="restaurants-icon">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        Food type: Fine dining
+                    </div>
+
+                    <div class="restaurants-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Restaurantul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="restaurants-card">
+                <div class="restaurant-background">
+                    <img class="restaurant-background-image" src="images/restaurant2.jpg" alt="">
+                </div>
+                <div class="restaurants-info-container">
+                    <div class="restaurants-name">
+                        <p class="restaurant-name-text">Restaurant Timisoara</p>
+                        <div class="restaurants-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="restaurants-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="restaurants-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="restaurants-icon">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        Food type: Fine dining
+                    </div>
+
+                    <div class="restaurants-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Restaurantul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="restaurants-card">
+                <div class="restaurant-background">
+                    <img class="restaurant-background-image" src="images/restaurant3.jpg" alt="">
+                </div>
+                <div class="restaurants-info-container">
+                    <div class="restaurants-name">
+                        <p class="restaurant-name-text">Restaurant Timisoara</p>
+                        <div class="restaurants-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="restaurants-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="restaurants-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="restaurants-icon">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        Food type: Fine dining
+                    </div>
+
+                    <div class="restaurants-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Restaurantul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="restaurants-card">
+                <div class="restaurant-background">
+                    <img class="restaurant-background-image" src="images/restaurant4.jpg" alt="">
+                </div>
+                <div class="restaurants-info-container">
+                    <div class="restaurants-name">
+                        <p class="restaurant-name-text">Restaurant Timisoara</p>
+                        <div class="restaurants-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="restaurants-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="restaurants-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="restaurants-icon">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        Food type: Fine dining
+                    </div>
+
+                    <div class="restaurants-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Restaurantul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="restaurants-card">
+                <div class="restaurant-background">
+                    <img class="restaurant-background-image" src="images/restaurant5.jpg" alt="">
+                </div>
+                <div class="restaurants-info-container">
+                    <div class="restaurants-name">
+                        <p class="restaurant-name-text">Restaurant Timisoara</p>
+                        <div class="restaurants-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="restaurants-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="restaurants-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="restaurants-icon">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        Food type: Fine dining
+                    </div>
+
+                    <div class="restaurants-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Restaurantul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="restaurants-card">
+                <div class="restaurant-background">
+                    <img class="restaurant-background-image" src="images/restaurant6.jpg" alt="">
+                </div>
+                <div class="restaurants-info-container">
+                    <div class="restaurants-name">
+                        <p class="restaurant-name-text">Restaurant Timisoara</p>
+                        <div class="restaurants-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="restaurants-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="restaurants-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="restaurants-icon">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        Food type: Fine dining
+                    </div>
+
+                    <div class="restaurants-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Restaurantul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="restaurants-card">
+                <div class="restaurant-background">
+                    <img class="restaurant-background-image" src="images/restaurant7.jpeg" alt="">
+                </div>
+                <div class="restaurants-info-container">
+                    <div class="restaurants-name">
+                        <p class="restaurant-name-text">Restaurant Timisoara</p>
+                        <div class="restaurants-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="restaurants-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="restaurants-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="restaurants-icon">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        Food type: Fine dining
+                    </div>
+
+                    <div class="restaurants-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Restaurantul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

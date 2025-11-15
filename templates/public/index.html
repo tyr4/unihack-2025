@@ -1,0 +1,86 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="slides">
+            <div class="slide active">
+                <img src=" {% static 'images/slide1.jpg' %}" alt="img1">
+            </div>
+            <div class="slide">
+                <img src=" {% static 'images/slide2.jpg' %}" alt="img2">
+            </div>
+            <div class="slide">
+                <img src=" {% static 'images/slide3.jpg' %}" alt="img3">
+            </div>
+        </div>
+
+        <div class="widgets">
+
+            <a href="/restaurants" class="widget">
+                <div class="widget-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h3>Restaurants</h3>
+                <p>Find places to eat in Timișoara</p>
+            </a>
+
+            <a href="/hotels" class="widget">
+                <div class="widget-icon">
+                    <i class="fa-solid fa-hotel"></i>
+                </div>
+                <h3>Hotels</h3>
+                <p>Accommodation options across the city</p>
+            </a>
+
+            <a href="/weather" class="widget">
+                <div class="widget-icon">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                </div>
+                <h3>Weather</h3>
+                <p>Current weather & forecast</p>
+            </a>
+
+            <a href="/bus" class="widget">
+                <div class="widget-icon">
+                    <i class="fa-solid fa-bus"></i>
+                </div>
+                <h3>Bus Routes</h3>
+                <p>Public transport lines & schedules</p>
+            </a>
+
+            <a href="/alerts" class="widget notif-widget">
+                <div class="widget-icon">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span class="notif-badge">3</span>
+                </div>
+                <h3>Alerts</h3>
+                <p>Important updates & city alerts</p>
+            </a>
+
+            <a href="com/plaint" class="widget">
+                <div class="widget-icon">
+                    <i class="fa-solid fa-pencil"></i>
+                </div>
+                <h3>City Issues</h3>
+                <p>Report issues around the city</p>
+            </a>
+        </div>
+
+        <section class="call-to-action">
+            <h2>Stay Informed. Stay Safe.</h2>
+            <p>Subscribe to receive important city alerts, safety updates, traffic notifications, and emergency warnings directly in your inbox.</p>
+
+            <button class="cta-btn">Subscribe to our Alerts system</button>
+        </section>
+
+    </main>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

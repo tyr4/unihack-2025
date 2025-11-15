@@ -1,0 +1,254 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/hotels.css' %}">
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="hotels-header">
+            <h1>Hotels section</h1>
+
+            <div class="hotels-dropdown-container">
+                <select class="hotels-dropdown-menu">
+                    <option value="all">All</option>
+                    <option value="fine">0-50 RON</option>
+                    <option value="casual">51-100 RON</option>
+                    <option value="fastfood">101-200 RON</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="hotels-grid">
+            <div class="hotels-card">
+                <div class="hotels-background">
+                    <img class="hotels-background-image" src="images/hotel1.jpg" alt="">
+                </div>
+                <div class="hotels-info-container">
+                    <div class="hotels-name">
+                        <p class="hotels-name-text">Hotel Timisoara</p>
+                        <div class="hotels-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="hotels-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="hotels-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="hotels-icon">
+                        <i class="fa-solid fa-euro-sign"></i>
+                        Average price/night: 100 RON
+                    </div>
+
+                    <div class="hotels-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Hotelul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="hotels-card">
+                <div class="hotels-background">
+                    <img class="hotels-background-image" src="images/hotel2.jpg" alt="">
+                </div>
+                <div class="hotels-info-container">
+                    <div class="hotels-name">
+                        <p class="hotels-name-text">Hotel Timisoara</p>
+                        <div class="hotels-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="hotels-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="hotels-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="hotels-icon">
+                        <i class="fa-solid fa-euro-sign"></i>
+                        Average price/night: 100 RON
+                    </div>
+
+                    <div class="hotels-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Hotelul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="hotels-card">
+                <div class="hotels-background">
+                    <img class="hotels-background-image" src="images/hotel3.jpg" alt="">
+                </div>
+                <div class="hotels-info-container">
+                    <div class="hotels-name">
+                        <p class="hotels-name-text">Hotel Timisoara</p>
+                        <div class="hotels-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="hotels-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="hotels-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="hotels-icon">
+                        <i class="fa-solid fa-euro-sign"></i>
+                        Average price/night: 100 RON
+                    </div>
+
+                    <div class="hotels-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Hotelul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="hotels-card">
+                <div class="hotels-background">
+                    <img class="hotels-background-image" src="images/hotel4.jpg" alt="">
+                </div>
+                <div class="hotels-info-container">
+                    <div class="hotels-name">
+                        <p class="hotels-name-text">Hotel Timisoara</p>
+                        <div class="hotels-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="hotels-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="hotels-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="hotels-icon">
+                        <i class="fa-solid fa-euro-sign"></i>
+                        Average price/night: 100 RON
+                    </div>
+
+                    <div class="hotels-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Hotelul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="hotels-card">
+                <div class="hotels-background">
+                    <img class="hotels-background-image" src="images/hotel5.jpg" alt="">
+                </div>
+                <div class="hotels-info-container">
+                    <div class="hotels-name">
+                        <p class="hotels-name-text">Hotel Timisoara</p>
+                        <div class="hotels-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="hotels-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="hotels-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="hotels-icon">
+                        <i class="fa-solid fa-euro-sign"></i>
+                        Average price/night: 100 RON
+                    </div>
+
+                    <div class="hotels-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Hotelul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="hotels-card">
+                <div class="hotels-background">
+                    <img class="hotels-background-image" src="images/hotel6.jpg" alt="">
+                </div>
+                <div class="hotels-info-container">
+                    <div class="hotels-name">
+                        <p class="hotels-name-text">Hotel Timisoara</p>
+                        <div class="hotels-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="hotels-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="hotels-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="hotels-icon">
+                        <i class="fa-solid fa-euro-sign"></i>
+                        Average price/night: 100 RON
+                    </div>
+
+                    <div class="hotels-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Hotelul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+            <div class="hotels-card">
+                <div class="hotels-background">
+                    <img class="hotels-background-image" src="images/hotel7.jpg" alt="">
+                </div>
+                <div class="hotels-info-container">
+                    <div class="hotels-name">
+                        <p class="hotels-name-text">Hotel Timisoara</p>
+                        <div class="hotels-rating">
+                            <b></b> 4.5 &#9733
+                        </div>
+                    </div>
+                    <div class="hotels-address">
+                        <i class='fas fa-map-marker-alt'></i>
+                        Str. Ionel Ionescu nr. 123
+                    </div>
+
+                    <div class="hotels-phone-number">
+                        <i class="fa-solid fa-phone"></i>
+                        0771337420
+                    </div>
+
+                    <div class="hotels-icon">
+                        <i class="fa-solid fa-euro-sign"></i>
+                        Average price/night: 100 RON
+                    </div>
+
+                    <div class="hotels-description">
+                        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Hotelul Timisoara este o experienta minunata care ofera o atmosfera placuta
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

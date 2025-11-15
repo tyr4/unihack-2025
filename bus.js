@@ -5,16 +5,17 @@ const maxLat = 45.8050;
 
 const agendyId = 8;
 
-const urlVehicle = "https://api.tranzy.ai/v1/opendata/vehicles";
 const urlRoutes = "https://api.tranzy.ai/v1/opendata/routes";
 const urlTrips = "https://api.tranzy.ai/v1/opendata/trips";
+const urlStopTimes = "https://api.tranzy.ai/v1/opendata/stop_times";
 const urlStops = "https://api.tranzy.ai/v1/opendata/stops";
 
 let geoapifyApiKey;
 let routingUrl;
 let tranzyApiKey;
 
-const coordonates = [
+let stationNames = [];
+let coordonates = [
     45.7606, 21.2084,
     45.7580, 21.2140,
     45.7575, 21.2300,
@@ -50,14 +51,47 @@ async function getBusEndpoint(url) {
     }}
 
 async function getRouteShortName() {
-    const filterName= "E8"
+    const route_short_name = "E8"
+    const routes = await getBusEndpoint(urlRoutes);
+    const requiredRoutes = routes.filter(route => route.route_short_name === route_short_name);
+    routeId = requiredRoutes[0].route_id;
+    console.log(routeId);
+    getTripId(routeId);
 }
 
-async function getTripId(){}
+async function getTripId(trip_id){
+    const trips = await getBusEndpoint(urlTrips);
+    const requiredTrips = trips.filter(trip => trip.route_id === trip_id);
+    const tripId = requiredTrips[0].trip_id;
+    console.log(tripId);
+    getStopId(tripId);
+}
 
-async function getStopId(){}
+async function getStopId(stopId){
+    const stopTimes = await getBusEndpoint(urlStopTimes);
+    const requiredStopTimes = stopTimes.filter(stopTime => stopTime.trip_id === stopId);
+    const stopIdsList = requiredStopTimes.map(stopTime => stopTime.stop_id);
 
-async function getCords(){}
+    stopIdsList.forEach(trip => {
+        stationNames.push(trip.trip_headsign);
+    })
+
+    console.log(stopIdsList);
+    getCords(stopIdsList);
+}
+
+async function getCords(stopIdsList){
+    const stops = await getBusEndpoint(urlStops);
+    stopIdsList.forEach(stopId => {
+        const stop = stops.find(s => s.stop_id === stopId);
+        if (stop) {
+            stationNames.push({ name: stop.stop_name, lat: stop.stop_lat, lon: stop.stop_lon });
+            coordonates.push(stop.stop_lat, stop.stop_lon);
+        }
+    });
+    console.log(stationNames);
+    console.log(coordonates);
+}
 
 async function create_map() {
     const map = new maplibregl.Map({
@@ -89,7 +123,7 @@ async function create_map() {
 
     map.on('load', async () => {
         try {
-            console.log('Fetching:', routingUrl);  // ← check console
+            // console.log('Fetching:', routingUrl);  // ← check console
             const res = await fetch(routingUrl);
             if (!res.ok) {
                 const err = await res.text();
@@ -143,7 +177,9 @@ function buildRouteURL(coords) {
 
 window.onload = async function() {
     await pullAPiKey()
-    create_map();
-    buildRouteURL(coordonates);
+    await create_map();
+    await buildRouteURL(coordonates);
+
+    await getRouteShortName()
 }
 

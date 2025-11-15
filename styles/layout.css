@@ -19,7 +19,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #5a0fa8, #6d19c2);
+    background: linear-gradient(90deg, rgb(118, 17, 202) 0%, rgb(140, 33, 183) 50%, rgb(121, 11, 203) 100%);
     color: var(--main-text-color);
     width: 100%;
     height: fit-content;
@@ -61,7 +61,7 @@ footer {
     flex-direction: row;
     align-items: center;
     height: fit-content;
-    background: linear-gradient(135deg, #5a0fa8, #6d19c2);
+    background: linear-gradient(90deg, rgb(118, 17, 202) 0%, rgb(140, 33, 183) 50%, rgb(121, 11, 203) 100%);
     color: white;
 }
 

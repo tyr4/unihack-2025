@@ -6,6 +6,11 @@ main {
     min-height: 500px;
     font-family: Arial,sans-serif;
 }
+
+body {
+    margin: 0;
+}
+
 #login{
     position: absolute;
     z-index: 10;

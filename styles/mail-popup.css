@@ -1,0 +1,138 @@
+/* OVERLAY */
+.cta-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 1;
+
+    transition: opacity .35s ease;
+    z-index: 9999;
+}
+
+/* Active */
+.cta-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* POPUP BOX */
+.cta-box {
+    width: 430px;
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+    position: relative;
+
+    animation: ctaIn .35s ease forwards;
+}
+
+@keyframes ctaIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+
+/* CLOSE BUTTON */
+.cta-close {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    border: none;
+    background: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease;
+}
+
+.cta-close:hover {
+    transform: scale(1.1);
+}
+
+/* TITLE WITH GRADIENT ANIMATION */
+.popup-title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg,#7b1ed7,#b169ff,#7b1ed7);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Arial, sans-serif;
+
+
+    animation: pulseGradient 4s ease infinite;
+}
+
+@keyframes pulseGradient {
+    0% { background-position: 0%; }
+    50% { background-position: 100%; }
+    100% { background-position: 0%; }
+}
+
+/* SUBTEXT */
+.popup-subtext {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+/* INPUT */
+.cta-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: .25s;
+}
+
+.cta-input:focus {
+    border-color: #6d19c2;
+    box-shadow: 0 0 10px rgba(109,25,194,0.35);
+    outline: none;
+}
+
+/* BUTTON */
+.cta-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg,#7b1ed7,#5e0fa7);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+
+    box-shadow: 0 6px 0 #4b0c86;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 0 #4b0c86;
+}
+
+.cta-btn:active {
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 #4b0c86;
+}

@@ -11,6 +11,10 @@
     padding-top: 100px;
 }
 
+.widget h3 {
+    margin-top: 0;
+}
+
 .widget{
     position: relative;
     background: #faf5ff; /* mov foarte deschis */
@@ -18,23 +22,19 @@
     padding: 32px;
     width: 100%;
     height: 260px;
-
-
     box-shadow: 0 10px 25px rgba(109, 25, 194, 0.12);
     text-decoration: none;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
-
     transition: transform .25s ease, box-shadow .25s ease;
-
 }
 .widget:hover {
     transform: translateY(-6px);
     box-shadow: 0 14px 30px rgba(109, 25, 194, 0.18);
 
 }
+
 .widget:hover .widget-icon i {
     animation: icon-bounce 0.5s ease;
 }
@@ -46,35 +46,35 @@
     100% { transform: translateY(0); }
 }
 
-.widget i{
+.widget i {
     font-size: 28px;
     color: #7b1ed7;
 }
-.widget p{
+.widget p {
     margin: 0;
     font-size: 0.95rem;
-    color: #9333ea;
+    color: #000000;
     line-height: 1.45;
     text-align: start;
 }
-.widget h3{
+.widget h3 {
     font-size: 32px;
     color: #7b1ed7;
 }
 
-.notif-badge{
+.notif-badge {
     position: absolute;
-    top: -8px;
-    right: -8px;
-
+    top: -12px;
+    right: -12px;
     background: #5a0fa8;
     color: white;
-    font-size: 13px;
-    padding: 5px 9px;
+    font-size: 18px;
+    padding: 10px 14px;
     border-radius: 50%;
     font-weight: bold;
-    box-shadow: 0 3px 8px rgba(108, 39, 245, 0.4);
+    box-shadow: 0 5px 12px rgba(108, 39, 245, 0.4);
 }
+
 .login-button {
     background: rgba(255, 255, 255, 0);
     border: none;
@@ -83,37 +83,32 @@
 
 .login-button:hover {
     background: rgba(255, 255, 255, 0.15);
-
 }
 
 .login-button-image {
     height: 40px;
     width: 40px;
 }
-/* CONTAINER CTA */
 
-/* CONTAINER SLIDESHOW — responsive, centrat */
 .slides {
     width: 100%;
-    /* nu depășește lățimea site-ului */
-    height: 420px;           /* înălțime ideală pentru slideshow */
-    margin: 0 auto;          /* îl centrează */
+    height: 420px;
+    margin: 0 auto;
     margin-bottom: 60px;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    padding: 0 15px;
+    /*padding: 0 15px;*/
 }
 
 /* FIECARE SLIDE — stacked peste alte */
 .slide {
     position: absolute;
+    object-fit: contain;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     opacity: 0;
     transition: opacity 1.2s ease-out;
 }

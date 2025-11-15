@@ -2,7 +2,7 @@
 .widgets{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 50px;
+    gap: 110px;
     justify-items: left;   /* centrează elementele pe orizontală */
     align-items: center;       /* le aliniază sus */
     width: 100%;
@@ -12,32 +12,68 @@
 }
 
 .widget{
-    background: linear-gradient(135deg, #ffffff, #f3f3f7);
+    position: relative;
+    background: #faf5ff; /* mov foarte deschis */
+    border-radius: 22px;
+    padding: 32px;
     width: 100%;
-    height: 160px;
-    margin-top: -8px;
-    transition: transform 0.25s ease;
+    height: 260px;
+
+
+    box-shadow: 0 10px 25px rgba(109, 25, 194, 0.12);
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    transition: transform .25s ease, box-shadow .25s ease;
 
 }
 .widget:hover {
-    background: linear-gradient(135deg, #ffffff, #f3f3f7);
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(109, 25, 194, 0.18);
+
+}
+.widget:hover .widget-icon i {
+    animation: icon-bounce 0.5s ease;
+}
+
+@keyframes icon-bounce {
+    0%   { transform: translateY(0); }
+    35%  { transform: translateY(-6px); }
+    60%  { transform: translateY(2px); }
+    100% { transform: translateY(0); }
+}
+
+.widget i{
+    font-size: 28px;
+    color: #7b1ed7;
+}
+.widget p{
+    margin: 0;
+    font-size: 0.95rem;
+    color: #9333ea;
+    line-height: 1.45;
+    text-align: start;
+}
+.widget h3{
+    font-size: 32px;
+    color: #7b1ed7;
 }
 
 .notif-badge{
     position: absolute;
-    top: 5px;
-    right: 5px;
-    border-radius:50px;
-    width: 30px;
-    height: 30px;
-   display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+    top: -8px;
+    right: -8px;
 
-    background-color:#3A0882;
+    background: #5a0fa8;
     color: white;
+    font-size: 13px;
+    padding: 5px 9px;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(108, 39, 245, 0.4);
 }
 .login-button {
     background: rgba(255, 255, 255, 0);
@@ -94,6 +130,7 @@
     height: 100%;
     object-fit: cover;   /* umple frumos containerul fără să fie pixelată */
     object-position: center;
+    background-repeat: no-repeat;
 }
 /* === CALL TO ACTION SECTION === */
 .call-to-action {
@@ -129,6 +166,7 @@
 
 .call-to-action p {
     animation-delay: 0.2s;
+    color: whitesmoke;
 }
 
 /* text animation */
